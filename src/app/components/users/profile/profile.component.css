@@ -1,0 +1,36 @@
+
+.main-section {
+    border: 1px solid #007bff;
+    background: #fff;
+  }
+  .profile-header {
+    background: #007bff;
+    height: 80px;
+  }
+  .user-detail {
+    margin: -50px 0 30px 0;
+  }
+  
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  .user-details h5 {
+    margin: 15px 0 5px 0;
+  
+
+}body{
+    
+  background: url(/assets/images/ima.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 800px;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  }

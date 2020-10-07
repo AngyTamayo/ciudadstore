@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top " style="background: #D70303">
+  <img src="./assets/images/logo.png" class="img-circle" width="50" class="my-4" >
+    <a class="navbar-brand" routerLink="/" style="font-family: cursive;" >{{app_name}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar"
+      aria-expanded="false" aria-label="Toggle navigation" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" *ngIf="isLogged">
+          <a class="nav-link" routerLink="/offers">Privadas
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" *ngIf="!isLogged">
+          <a class="nav-link" routerLink="/user/register">Register
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="isLogged">
+          <a class="nav-link" routerLink="/user/profile">Perfil</a>
+        </li>
+        <li class="nav-item" *ngIf="isLogged">
+          <a class="nav-link" routerLink="/admin/list-ciudad">Lista Sitios</a>
+        </li>
+        <li class="nav-item" *ngIf="!isLogged">
+          <a class="nav-link" routerLink="/user/login">Login
+          </a>
+        </li>
+        <li class="nav-item" *ngIf="isLogged">
+          <a href="#" class="nav-link" (click)="onLogout()">Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>

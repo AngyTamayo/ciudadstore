@@ -1,0 +1,32 @@
+.form-control.login-user {
+    border: 0 solid #74DC8F !important;
+  }
+  .btn-social{
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.2);
+
+  }
+
+  .btn-google{
+    color: #dd4b39;
+
+  }body{
+    
+    background: url(/assets/images/unico.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 800px;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    }
